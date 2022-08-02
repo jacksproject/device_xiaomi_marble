@@ -76,7 +76,9 @@ BOARD_VENDOR_RAMDISK_FRAGMENT.dlkm.KERNEL_MODULE_DIRS := top
 
 BOARD_KERNEL_CMDLINE := \
     disable_dma32=on \
-    mtdoops.fingerprint=$(CUSTOM_VERSION)
+    mtdoops.fingerprint=$(CUSTOM_VERSION) \
+    printk.devkmsg=on
+
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.load_modules_parallel=performance \
