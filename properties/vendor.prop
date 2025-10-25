@@ -143,6 +143,7 @@ debug.sf.set_idle_timer_ms=1000
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_egl_image_tracker=0
+graphics.gpu.profiler.support=true
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=258
