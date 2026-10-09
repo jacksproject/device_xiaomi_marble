@@ -78,7 +78,8 @@ BOARD_KERNEL_CMDLINE := \
     disable_dma32=on \
     mtdoops.fingerprint=$(CUSTOM_VERSION) \
     log_buf_len=1M \
-    printk.devkmsg=on
+    printk.devkmsg=on \
+    scsi_mod.scan=sync
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
