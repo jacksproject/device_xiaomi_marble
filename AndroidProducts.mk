@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_marble.mk
+    $(LOCAL_DIR)/halcyon_marble.mk

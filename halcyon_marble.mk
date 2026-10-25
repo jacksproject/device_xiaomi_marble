@@ -7,12 +7,17 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common PixelOS configuration
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+# Inherit from common Halcyon configuration
+$(call inherit-product, vendor/halcyon/config/common.mk)
 
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := custom_marble
+# Halcyon
+WITH_GMS := true
+TARGET_DISABLE_EPPE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+PRODUCT_NAME := halcyon_marble
 PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
