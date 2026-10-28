@@ -23,6 +23,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
 
+# Dolby Atmos
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-marble/device.mk)
 
