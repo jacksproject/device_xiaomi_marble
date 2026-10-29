@@ -43,6 +43,10 @@
 /mnt/vendor/persist/goodix(/.*)? u:object_r:vendor_fingerprint_data_file:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 
+# LED
+/sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-1]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,flash_led@ee00/leds(/.*)?            u:object_r:sysfs_leds:s0
+/sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?                                                                           u:object_r:sysfs_leds:s0
+
 # Mac Address
 /data/vendor/mac_addr(/.*)? u:object_r:vendor_mac_vendor_data_file:s0
 /vendor/bin/nv_mac u:object_r:vendor_wcnss_service_exec:s0
