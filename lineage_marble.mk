@@ -7,15 +7,20 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common Halcyon configuration
-$(call inherit-product, vendor/halcyon/config/common.mk)
+# Inherit from common Derpfest configuration
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_SCREEN_WIDTH := 1080
 
-# Halcyon
-WITH_GMS := true
+# Derpfest Addons
+TARGET_CALL_RECORDING_SUPPORTED := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DISABLE_EPPE := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# GMS
+WITH_GMS := true
 
 PRODUCT_NAME := halcyon_marble
 PRODUCT_DEVICE := marble
