@@ -184,6 +184,7 @@ TARGET_SCREEN_DENSITY := 440
 VENDOR_SECURITY_PATCH := 2026-02-01
 
 # Sepolicy
+include device/lineage/sepolicy/libion/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
