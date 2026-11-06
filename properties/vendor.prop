@@ -132,6 +132,7 @@ debug.sf.enable_egl_image_tracker=0
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=258
+debug.renderengine.blur_algorithm=kawase_darkmoon
 debug.sdm.support_writeback=0
 ro.surface_flinger.set_idle_timer_ms=500
 ro.vendor.all_modes.colorpick_adjust=true
