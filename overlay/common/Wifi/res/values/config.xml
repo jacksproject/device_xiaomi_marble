@@ -136,4 +136,8 @@
     <string-array name="config_wifiCharsetsForSsidTranslation" translatable="false">
         <item>zh,GBK</item>
     </string-array>
+
+    <!-- Enable concurrent restricted connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled">true</bool>
 </resources>
