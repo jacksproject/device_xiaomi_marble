@@ -13,6 +13,10 @@ on fs
     mkdir /mnt/vendor/persist/qca6490/ 0700 system system
 
 on boot
+    # Workarround for cache
+     rm /data/resource-cache
+     rm /data/system/package_cache
+
     # modem
     chmod 0777 /dev/smd8
     chown radio radio /dev/smd8
