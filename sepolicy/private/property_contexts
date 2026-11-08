@@ -1,3 +1,6 @@
+# Bluetooth
+persist.bluetooth.a2dp_aac_abr.enable    u:object_r:exported_bluetooth_prop:s0
+
 # Device
 ro.product.marketname                  u:object_r:build_prop:s0
 ro.product.mod_device                  u:object_r:build_prop:s0
