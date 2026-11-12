@@ -48,7 +48,7 @@ echo 240 > /proc/sys/walt/sched_coloc_busy_hysteresis_enable_cpus
 echo 10 10 10 10 10 10 10 95 > /proc/sys/walt/sched_coloc_busy_hyst_cpu_busy_pct
 echo 5000000 5000000 5000000 5000000 5000000 5000000 5000000 2000000 > /proc/sys/walt/sched_util_busy_hyst_cpu_ns
 echo 255 > /proc/sys/walt/sched_util_busy_hysteresis_enable_cpus
-echo 15 15 15 15 15 15 15 15 > /proc/sys/walt/sched_util_busy_hyst_cpu_util
+echo 30 30 30 30 30 30 30 15 > /proc/sys/walt/sched_util_busy_hyst_cpu_util
 
 # set the threshold for low latency task boost feature which prioritize
 # binder activity tasks
