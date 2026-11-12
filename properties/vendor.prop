@@ -136,7 +136,6 @@ debug.sf.earlyGl.sf.duration.120=12333333
 debug.sf.earlyGl.sf.duration.144=9722222
 debug.sf.earlyGl.sf.duration.180=7777777
 debug.sf.frame_rate_multiple_threshold=120
-debug.sf.latch_unsignaled=1
 debug.sf.late.sf.duration.90=16111111
 debug.sf.late.sf.duration.120=12333333
 debug.sf.late.sf.duration.144=9722222
