@@ -102,10 +102,6 @@ on early-boot
     start vendor.sensors
     verity_update_state
 
-    # USB controller configuration. Set it before init.rc runs class_start hal
-    # on boot: the QTI gadget HAL exits when it is not defined yet.
-    setprop vendor.usb.controller a600000.dwc3
-
     # Let surfaceflinger and its RenderEngine use the big cluster
     mkdir /dev/cpuset/surfaceflinger
     write /dev/cpuset/surfaceflinger/cpus 4-7
@@ -148,8 +144,6 @@ on init && property:ro.boot.mode=charger
 
 on charger
     start vendor.power_off_alarm
-    setprop sys.usb.controller a600000.dwc3
-    wait /sys/class/udc/${sys.usb.controller}
     write /sys/kernel/cnss/charger_mode 1
 
 #service vendor.lowi /vendor/bin/sscrpcd
